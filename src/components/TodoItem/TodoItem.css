@@ -1,0 +1,100 @@
+.todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.todoContext {
+  border: 1px blue dotted;
+  padding: 10px;
+  margin-top: 50px;
+  position: relative;
+  height: 50vh;
+  background-color: aliceblue;
+}
+.cardButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cardButton {
+  padding: 10px 20px;
+  color: wheat;
+  background-color: blue;
+  cursor: pointer;
+}
+.completedTodo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bolder;
+  color: red;
+}
+.todo h2 {
+  border: 1px solid blue;
+  border-radius: 25px;
+  padding: 10px;
+  text-align: center; 
+}
+.todo img {
+  max-width: 300px;
+  position: absolute;
+  bottom:0;
+  left:5px;
+}
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .65);
+  visibility: hidden;
+  backface-visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+}
+.modalOpen {
+  visibility: visible;
+  backface-visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+.modalContentForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+  background-color: aliceblue;
+  margin-top: 80px;
+}
+.modalInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modalContent {
+  width:60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.modalButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  margin-top: 20px;
+}
+.modalButton button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: brown;
+  color: antiquewhite;
+  border-radius: 10px;
+}
+.modalButton button:last-child {
+  background-color: blueviolet;
+}

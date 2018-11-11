@@ -1,0 +1,26 @@
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar ul li {
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+.navbar ul li>a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+.navbar {
+  background-color: blueviolet;
+  padding: 1rem;
+  margin: 0;
+  
+}
+.active {
+  font-weight: bolder;
+}
+.navbar h4 {
+  text-align: center;
+  color: white;
+}

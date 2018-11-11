@@ -1,0 +1,94 @@
+.todoList {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 50px;
+  margin: 0 50px;
+}
+.form input, select, textarea {
+  padding: 20px 0;
+  width: 20rem;
+  margin: 10px 20px;
+  border-radius: 25px;
+}
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25vh;
+}
+.search  input {
+  padding: 20px;
+}
+.deleteButton {
+  color: red;
+  font-weight: bolder;
+  align-self: center;
+  margin: 10px 0;
+}
+.deleteButton:hover {
+  cursor: pointer;
+}
+.cardBottom {
+  background-color: antiquewhite;
+  flex: 1 1 auto;
+}
+.todoListSingle {
+  width: 350px;
+  height: 250px;
+  border: 1px blue solid;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: white;
+}
+.todoListSingle h2 {
+  color: white;
+}
+.todoListSingle h2:hover{
+  color: yellow;
+}
+.category {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  border: 1px solid;
+  padding: 0 10px;
+  color: white;
+}
+.Cleaning {
+  border-color: blue;
+  background-color: rgba(0, 0, 255, 0.924);
+}
+.Laundry {
+  border-color: green;
+  background-color: rgba(0, 128, 0, 0.863);
+}
+.Sport {
+  border-color: yellow;
+  background-color: rgba(255, 255, 0, 0.897);
+}
+.Leisure {
+  border-color: red;
+  background-color: rgba(255, 0, 0, 0.863);
+}
+.Health {
+  border-color: orange;
+  background-color: rgba(255, 166, 0, 0.856);
+}
+.dueTodo {
+  padding-bottom: 10px;
+  background-color: gray;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
